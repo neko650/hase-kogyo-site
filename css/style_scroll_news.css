@@ -218,3 +218,17 @@ body.home-bg {
     line-height: 1.5;
   }
 }
+
+/* スマホ用：お知らせは下部に自然に表示 */
+@media screen and (max-width: 768px) {
+  .news-frame {
+    position: static !important;
+    width: 95%;
+    margin: 2rem auto;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+}
