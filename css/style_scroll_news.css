@@ -173,3 +173,87 @@ body.home-bg {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* 文字に黒っぽい影 */
   letter-spacing: 1px; /* 文字の間隔を少し広げる */
 }
+
+/* ==============================
+   レスポンシブ対応 (スマホ向け)
+   ============================== */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .menu-btn {
+    top: 20px;
+    right: 20px;
+  }
+
+  .main-visual {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .news-box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .fadein {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+}
+
+/* ==============================
+   タブレット対応 (768px〜1024px)
+   ============================== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .main-visual {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .news-box {
+    width: 90%;
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .fadein {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+}
