@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+body.home-bg {
+  background: url("../images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.logo {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.site-footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: none;
+}
+
+.home-title {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.home-greeting {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0 1.5rem;
+}
+
+.news-list li {
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
