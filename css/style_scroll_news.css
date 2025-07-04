@@ -257,3 +257,103 @@ body.home-bg {
     padding: 1rem;
   }
 }
+
+/* ==============================
+   スマホお知らせ欄調整 & ナビ被り対策
+   ============================== */
+@media screen and (max-width: 768px) {
+  .news-box {
+    width: 95%;
+    font-size: 0.95rem;
+    padding: 1rem;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .news-box ul li {
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+
+  nav ul {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  nav.open ~ .main-title,
+  nav.open ~ .fadein,
+  nav.open ~ .main-content,
+  nav.open ~ .news-box {
+    display: none;
+  }
+}
+
+/* ==============================
+   メニューの余裕 + サンプル本文との重なり対策
+   ============================== */
+@media screen and (max-width: 768px) {
+  nav ul {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1.2rem;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  nav ul li {
+    margin: 14px 0;
+    padding: 10px 16px;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+
+  nav.open ~ .main-title,
+  nav.open ~ .fadein,
+  nav.open ~ .news-box,
+  nav.open ~ .sample-section {
+    display: none;
+  }
+}
+
+/* ==============================
+   スマホ向け最終修正 (nav固定・本文調整)
+   ============================== */
+@media screen and (max-width: 768px) {
+  nav ul {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 10000;
+  }
+
+  nav ul li {
+    margin: 12px 0;
+    padding: 8px 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .main-title,
+  .fadein {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .news-box {
+    width: 95%;
+    font-size: 0.95rem;
+    padding: 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .news-box ul li {
+    line-height: 1.6;
+    font-size: 0.9rem;
+  }
+}
