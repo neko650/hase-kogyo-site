@@ -223,6 +223,7 @@ body.home-bg {
 @media screen and (max-width: 768px) {
   .news-frame {
     position: static !important;
+    max-width: 380px;
     width: 95%;
     margin: 2rem auto;
     background: #fff;
@@ -243,9 +244,6 @@ body.home-bg {
     opacity: 1;
     pointer-events: auto;
   }
-}
-.scroll-hidden {
-  display: none;
 }
 
 .scroll-visible {
