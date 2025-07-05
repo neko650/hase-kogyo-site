@@ -232,3 +232,21 @@ body.home-bg {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   }
 }
+
+
+/* === スマホ用: お知らせ横幅制限と拡大防止 === */
+@media screen and (max-width: 768px) {
+  .news-frame {
+    max-width: 360px; /* 横幅の上限を追加 */
+  }
+  html, body {
+    touch-action: manipulation; /* ズーム抑制の一環 */
+  }
+}
+
+/* iOS のズーム防止 */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
