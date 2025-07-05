@@ -319,3 +319,9 @@ html {
 .logo.kikougyou-logo {
   font-family: 'OunenFont', sans-serif !important;
 }
+/* ---------------------------------------
+   スクロール位置の調整（ヘッダーずれ防止）
+------------------------------------------ */
+html {
+  scroll-padding-top: 80px;
+}
